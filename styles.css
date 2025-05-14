@@ -11,22 +11,60 @@ body {
 header {
     background-color: #0073e6;
     color: #fff;
-    padding: 40px 20px;
+    padding: 30px;
     text-align: center;
 }
 
-header img {
+.profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid #fff;
     margin-top: 15px;
-    border: 3px solid #ffffff;
 }
 
 section {
-    max-width: 800px;
-   ...
-        }
-    ]
+    max-width: 700px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.resume-button:hover {
+    background-color: #005bb5;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
 }
